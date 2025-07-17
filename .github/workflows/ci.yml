@@ -15,7 +15,6 @@ jobs:
         run: npm test
       - name: Run NPM Audit (Dependency Scan)
         run: npm audit --audit-level=high
-      - name: Run GitLeaks Scan
-        uses: zricethezav/gitleaks@v8.17.0
-        with:
-          args: detect --source=. --no-git --redact --verbose --exit-code 1
+      - name: GitLeaks Scan (Secrets Detection)
+        uses: zricethezav/gitleaks-action@v1.6.0
+      
