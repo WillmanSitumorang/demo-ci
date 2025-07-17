@@ -1,1 +1,1 @@
-const AWS_KEY = "AKIA1234567890123456";
+const GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnopqrstuvwxyzABCD";
